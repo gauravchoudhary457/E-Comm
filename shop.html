@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-Comm--Shop</title>
+        <link rel="stylesheet" href="..//Style/style.css">
+        <link rel="stylesheet" href="..//Style/common.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+            rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/565aa11fe1.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <div class="logo arrange-left width-25">
+                    <h1><span>E</span><span>Comm</span></h1>
+                </div>
+                <div class="serachProduct arrange-left width-50">
+                    <input type="text" placeholder="search for products">
+                    <button id="serachBtn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="selectedProduct arrange-left width-25">
+                    <button class="common-btn" onclick="window.location.href='cart.html'"><span>
+                            <i class="fa-solid fa-cart-shopping"></i>0
+                        </span></button>
+                    <button class="common-btn"><span>
+                            <i class="fa-solid fa-heart"></i>
+                            0</span></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="full-bannerWrapper">
+            <div class="shop-header">
+                <h1>Women Dress Collection</h1>
+                <h3>- Our Shop -</h3>
+            </div>
+            <div class="wrapper next-row">
+                <div class="sort-options">
+                    <select name="" id="">
+                        <option value="1">By Name</option>
+                        <option value="2">Popularity</option>
+                        <option value="3">Price--Low to High</option>
+                        <option value="4">Price--High to Low</option>
+                        <option value="5">Newest First</option>
+                    </select>
+                </div>
+
+                <div class="width-25 arrange-left">
+                    <h3>Filter By Price</h3>
+                    <div class="custom-check">
+                        <input type="checkbox" class="custom-check-input" checked="" id="price-all">
+                        <label class="custom-check-label" for="price-all">All Price</label>
+                        <span class="filter-prod-count">1000</span>
+                    </div>
+                    <div class="custom-check">
+                        <input type="checkbox" class="custom-check-input" checked="" id="0-100">
+                        <label class="custom-check-label" for="0-100">&#x20B9;0 - &#x20B9;399</label>
+                        <span class="filter-prod-count">100</span>
+                    </div>
+                    <div class="custom-check">
+                        <input type="checkbox" class="custom-check-input" checked="" id="100-200">
+                        <label class="custom-check-label" for="100-200">&#x20B9;100 - &#x20B9;200</label>
+                        <span class="filter-prod-count">500</span>
+                    </div>
+                    <div class="custom-check">
+                        <input type="checkbox" class="custom-check-input" checked="" id="200-300">
+                        <label class="custom-check-label" for="200-300">&#x20B9;200 - &#x20B9;300</label>
+                        <span class="filter-prod-count">66</span>
+                    </div>
+                    <div class="custom-check">
+                        <input type="checkbox" class="custom-check-input" checked="" id="300-2000">
+                        <label class="custom-check-label" for="300-2000">&#x20B9;300 - &#x20B9;2000</label>
+                        <span class="filter-prod-count">396</span>
+                    </div>
+
+                    <div class="filter-color">
+                        <h3>Filter By Color</h3>
+                        <div class="custom-check">
+                            <input type="checkbox" class="custom-check-input" checked id="red">
+                            <label class="custom-check-label" for="red">Red</label>
+                            <span class="filter-prod-count">100</span>
+                        </div>
+                        <div class="custom-check">
+                            <input type="checkbox" class="custom-check-input" checked id="yellow">
+                            <label class="custom-check-label" for="yellow">Yellow</label>
+                            <span class="filter-prod-count">500</span>
+                        </div>
+                        <div class="custom-check">
+                            <input type="checkbox" class="custom-check-input" checked id="green">
+                            <label class="custom-check-label" for="green">Green</label>
+                            <span class="filter-prod-count">66</span>
+                        </div>
+                        <div class="custom-check">
+                            <input type="checkbox" class="custom-check-input" checked id="orange">
+                            <label class="custom-check-label" for="orange">Skyblue</label>
+                            <span class="filter-prod-count">396</span>
+                        </div>
+                    </div>
+
+
+
+
+                    <h3>Filter By Size</h3>
+                    <div class="custom-check">
+                        <input type="checkbox" class="custom-check-input" checked="" id="size-all">
+                        <label class="custom-check-label" for="size-all">All Size</label>
+                        <span class="filter-prod-count">1000</span>
+                    </div>
+                    <div class="custom-check">
+                        <input type="checkbox" class="custom-check-input" checked="" id="small">
+                        <label class="custom-check-label" for="small">Small</label>
+                        <span class="filter-prod-count">100</span>
+                    </div>
+                    <div class="custom-check">
+                        <input type="checkbox" class="custom-check-input" checked="" id="medium">
+                        <label class="custom-check-label" for="medium">Medium</label>
+                        <span class="filter-prod-count">500</span>
+                    </div>
+                    <div class="custom-check">
+                        <input type="checkbox" class="custom-check-input" checked="" id="large">
+                        <label class="custom-check-label" for="large">&#x20B9;Large</label>
+                        <span class="filter-prod-count">66</span>
+                    </div>
+                    <div class="custom-check">
+                        <input type="checkbox" class="custom-check-input" checked="" id="extraLarge">
+                        <label class="custom-check-label" for="extraLarge">Extra Large</label>
+                        <span class="filter-prod-count">396</span>
+                    </div>
+                </div>
+
+                <div class="width-75 arrange-left">
+
+                    <div class="width-33 arrange-left">
+                        <div class="cart">
+                            <div class="">
+                                <img src="..//Images/product-1.jpg" alt="Product Image">
+                            </div>
+                            <div class="cart-details">
+                                <h6 class="name-head">Embroidered Short Dress - White</h6>
+                                <div class="cart-price">
+                                    <h6 class="current-price">&#x20B9;499.00</h6>
+                                    <h6 class="last_price">&#x20B9;699.00</h6>
+                                </div>
+                            </div>
+                            <div class="cart-footer">
+                                <a href="#"><i class="fa solid fa-eye"></i>
+                                    View Details</a>
+                                <a href="#"> <i class="fa solid fa-cart-arrow-down"></i>
+                                    Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="width-33 arrange-left">
+                        <div class="cart">
+                            <div class="">
+                                <img src="..//Images/product-1.jpg" alt="Product Image">
+                            </div>
+                            <div class="cart-details">
+                                <h6 class="name-head">Embroidered Short Dress - White</h6>
+                                <div class="cart-price">
+                                    <h6 class="current-price">&#x20B9;499.00</h6>
+                                    <h6 class="last_price">&#x20B9;699.00</h6>
+                                </div>
+                            </div>
+                            <div class="cart-footer">
+                                <a href="#"><i class="fa solid fa-eye"></i>
+                                    View Details</a>
+                                <a href="#"> <i class="fa solid fa-cart-arrow-down"></i>
+                                    Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="width-33 arrange-left">
+                        <div class="cart">
+                            <div class="">
+                                <img src="..//Images/product-1.jpg" alt="Product Image">
+                            </div>
+                            <div class="cart-details">
+                                <h6 class="name-head">Embroidered Short Dress - White</h6>
+                                <div class="cart-price">
+                                    <h6 class="current-price">&#x20B9;499.00</h6>
+                                    <h6 class="last_price">&#x20B9;699.00</h6>
+                                </div>
+                            </div>
+                            <div class="cart-footer">
+                                <a href="#"><i class="fa solid fa-eye"></i>
+                                    View Details</a>
+                                <a href="#"> <i class="fa solid fa-cart-arrow-down"></i>
+                                    Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="width-33 arrange-left">
+                        <div class="cart">
+                            <div class="">
+                                <img src="..//Images/product-1.jpg" alt="Product Image">
+                            </div>
+                            <div class="cart-details">
+                                <h6 class="name-head">Embroidered Short Dress - White</h6>
+                                <div class="cart-price">
+                                    <h6 class="current-price">&#x20B9;499.00</h6>
+                                    <h6 class="last_price">&#x20B9;699.00</h6>
+                                </div>
+                            </div>
+                            <div class="cart-footer">
+                                <a href="#"><i class="fa solid fa-eye"></i>
+                                    View Details</a>
+                                <a href="#"> <i class="fa solid fa-cart-arrow-down"></i>
+                                    Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="width-33 arrange-left">
+                        <div class="cart">
+                            <div class="">
+                                <img src="..//Images/product-1.jpg" alt="Product Image">
+                            </div>
+                            <div class="cart-details">
+                                <h6 class="name-head">Embroidered Short Dress - White</h6>
+                                <div class="cart-price">
+                                    <h6 class="current-price">&#x20B9;499.00</h6>
+                                    <h6 class="last_price">&#x20B9;699.00</h6>
+                                </div>
+                            </div>
+                            <div class="cart-footer">
+                                <a href="#"><i class="fa solid fa-eye"></i>
+                                    View Details</a>
+                                <a href="#"> <i class="fa solid fa-cart-arrow-down"></i>
+                                    Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="width-33 arrange-left">
+                        <div class="cart">
+                            <div class="">
+                                <img src="..//Images/product-1.jpg" alt="Product Image">
+                            </div>
+                            <div class="cart-details">
+                                <h6 class="name-head">Embroidered Short Dress - White</h6>
+                                <div class="cart-price">
+                                    <h6 class="current-price">&#x20B9;499.00</h6>
+                                    <h6 class="last_price">&#x20B9;699.00</h6>
+                                </div>
+                            </div>
+                            <div class="cart-footer">
+                                <a href="#"><i class="fa solid fa-eye"></i>
+                                    View Details</a>
+                                <a href="#"> <i class="fa solid fa-cart-arrow-down"></i>
+                                    Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="width-33 arrange-left">
+                        <div class="cart">
+                            <div class="">
+                                <img src="..//Images/product-1.jpg" alt="Product Image">
+                            </div>
+                            <div class="cart-details">
+                                <h6 class="name-head">Embroidered Short Dress - White</h6>
+                                <div class="cart-price">
+                                    <h6 class="current-price">&#x20B9;499.00</h6>
+                                    <h6 class="last_price">&#x20B9;699.00</h6>
+                                </div>
+                            </div>
+                            <div class="cart-footer">
+                                <a href="#"><i class="fa solid fa-eye"></i>
+                                    View Details</a>
+                                <a href="#"> <i class="fa solid fa-cart-arrow-down"></i>
+                                    Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="width-33 arrange-left">
+                        <div class="cart">
+                            <div class="">
+                                <img src="..//Images/product-1.jpg" alt="Product Image">
+                            </div>
+                            <div class="cart-details">
+                                <h6 class="name-head">Embroidered Short Dress - White</h6>
+                                <div class="cart-price">
+                                    <h6 class="current-price">&#x20B9;499.00</h6>
+                                    <h6 class="last_price">&#x20B9;699.00</h6>
+                                </div>
+                            </div>
+                            <div class="cart-footer">
+                                <a href="#"><i class="fa solid fa-eye"></i>
+                                    View Details</a>
+                                <a href="#"> <i class="fa solid fa-cart-arrow-down"></i>
+                                    Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="width-33 arrange-left">
+                        <div class="cart">
+                            <div class="">
+                                <img src="..//Images/product-1.jpg" alt="Product Image">
+                            </div>
+                            <div class="cart-details">
+                                <h6 class="name-head">Embroidered Short Dress - White</h6>
+                                <div class="cart-price">
+                                    <h6 class="current-price">&#x20B9;499.00</h6>
+                                    <h6 class="last_price">&#x20B9;699.00</h6>
+                                </div>
+                            </div>
+                            <div class="cart-footer">
+                                <a href="#"><i class="fa solid fa-eye"></i>
+                                    View Details</a>
+                                <a href="#"> <i class="fa solid fa-cart-arrow-down"></i>
+                                    Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="width-33 arrange-left">
+                        <div class="cart">
+                            <div class="">
+                                <img src="..//Images/product-1.jpg" alt="Product Image">
+                            </div>
+                            <div class="cart-details">
+                                <h6 class="name-head">Embroidered Short Dress - White</h6>
+                                <div class="cart-price">
+                                    <h6 class="current-price">&#x20B9;499.00</h6>
+                                    <h6 class="last_price">&#x20B9;699.00</h6>
+                                </div>
+                            </div>
+                            <div class="cart-footer">
+                                <a href="#"><i class="fa solid fa-eye"></i>
+                                    View Details</a>
+                                <a href="#"> <i class="fa solid fa-cart-arrow-down"></i>
+                                    Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="width-33 arrange-left">
+                        <div class="cart">
+                            <div class="">
+                                <img src="..//Images/product-1.jpg" alt="Product Image">
+                            </div>
+                            <div class="cart-details">
+                                <h6 class="name-head">Embroidered Short Dress - White</h6>
+                                <div class="cart-price">
+                                    <h6 class="current-price">&#x20B9;499.00</h6>
+                                    <h6 class="last_price">&#x20B9;699.00</h6>
+                                </div>
+                            </div>
+                            <div class="cart-footer">
+                                <a href="#"><i class="fa solid fa-eye"></i>
+                                    View Details</a>
+                                <a href="#"> <i class="fa solid fa-cart-arrow-down"></i>
+                                    Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="width-33 arrange-left">
+                        <div class="cart">
+                            <div class="">
+                                <img src="..//Images/product-1.jpg" alt="Product Image">
+                            </div>
+                            <div class="cart-details">
+                                <h6 class="name-head">Embroidered Short Dress - White</h6>
+                                <div class="cart-price">
+                                    <h6 class="current-price">&#x20B9;499.00</h6>
+                                    <h6 class="last_price">&#x20B9;699.00</h6>
+                                </div>
+                            </div>
+                            <div class="cart-footer">
+                                <a href="#"><i class="fa solid fa-eye"></i>
+                                    View Details</a>
+                                <a href="#"> <i class="fa solid fa-cart-arrow-down"></i>
+                                    Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="width-33 arrange-left">
+                        <div class="cart">
+                            <div class="">
+                                <img src="..//Images/product-1.jpg" alt="Product Image">
+                            </div>
+                            <div class="cart-details">
+                                <h6 class="name-head">Embroidered Short Dress - White</h6>
+                                <div class="cart-price">
+                                    <h6 class="current-price">&#x20B9;499.00</h6>
+                                    <h6 class="last_price">&#x20B9;699.00</h6>
+                                </div>
+                            </div>
+                            <div class="cart-footer">
+                                <a href="#"><i class="fa solid fa-eye"></i>
+                                    View Details</a>
+                                <a href="#"> <i class="fa solid fa-cart-arrow-down"></i>
+                                    Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="width-33 arrange-left">
+                        <div class="cart">
+                            <div class="">
+                                <img src="..//Images/product-1.jpg" alt="Product Image">
+                            </div>
+                            <div class="cart-details">
+                                <h6 class="name-head">Embroidered Short Dress - White</h6>
+                                <div class="cart-price">
+                                    <h6 class="current-price">&#x20B9;499.00</h6>
+                                    <h6 class="last_price">&#x20B9;699.00</h6>
+                                </div>
+                            </div>
+                            <div class="cart-footer">
+                                <a href="#"><i class="fa solid fa-eye"></i>
+                                    View Details</a>
+                                <a href="#"> <i class="fa solid fa-cart-arrow-down"></i>
+                                    Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="width-33 arrange-left">
+                        <div class="cart">
+                            <div class="">
+                                <img src="..//Images/product-1.jpg" alt="Product Image">
+                            </div>
+                            <div class="cart-details">
+                                <h6 class="name-head">Embroidered Short Dress - White</h6>
+                                <div class="cart-price">
+                                    <h6 class="current-price">&#x20B9;499.00</h6>
+                                    <h6 class="last_price">&#x20B9;699.00</h6>
+                                </div>
+                            </div>
+                            <div class="cart-footer">
+                                <a href="#"><i class="fa solid fa-eye"></i>
+                                    View Details</a>
+                                <a href="#"> <i class="fa solid fa-cart-arrow-down"></i>
+                                    Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="wrapper next-row">
+            <div class="footer">
+                <div class="width-25 arrange-left margin-right-5">
+                    <div class="logo ">
+                        <h1><span>E</span><span>Comm</span></h1>
+                    </div>
+                    <p class="footer-desc">
+                        At E-Comm, we make shopping easy and exciting. From trendy fashion to daily essentials, our
+                        goal
+                        is to deliver top-quality products right to your doorstep — with unbeatable deals and 24/7
+                        support you can count on.
+                    </p>
+                    <ul class="contact-list">
+                        <li><i class="fa fa-map-marker-alt icon"></i>Bhiwani,Haryana,India 127043
+                        </li>
+                        <li><i class="fa fa-envelope icon"></i>gauravchoudhary457@gmail.com
+                        </li>
+                        <li><i class="fa fa-phone icon"></i>+91 7988433133
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="width-25 quick-links arrange-left">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>Home</span></a></li>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>Our Shop</span></a></li>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>Shop Details</span></a></li>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>Checkout</span></a></li>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>About Us</span></a></li>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>Cart</span></a></li>
+                    </ul>
+
+                </div>
+                <div class="width-25 quick-links arrange-left">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>Home</span></a></li>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>Our Shop</span></a></li>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>Shop Details</span></a></li>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>Checkout</span></a></li>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>About Us</span></a></li>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>Cart</span></a></li>
+                    </ul>
+
+                </div>
+                <div class="width-25  arrange-left">
+                    <h3>News Letter</h3>
+                    <input type="text" class="footer-input" placeholder="Enter Name">
+                    <input type="email" class="footer-input" placeholder="Enter Email">
+                    <button class="subscribe-btn">Subscribe</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div>
+                <p>&copy; 2025 E-Comm. All Rights Reserved by <b>Gaurav Choudhary</b>.</p>
+            </div>
+            <img src="..//Images/payments.png" alt="payment">
+        </div>
+
+    </body>
+
+</html>
